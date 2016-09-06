@@ -1,0 +1,63 @@
+/**
+* @Author: lisnb
+* @Date:   2016-09-06T21:51:15+08:00
+* @Email:  lisnb.h@hotmail.com
+* @Last modified by:   lisnb
+* @Last modified time: 2016-09-06T23:48:07+08:00
+*/
+html, body {
+  height: 100%;
+  background: black;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  text-align: center;
+  background-color: black;
+}
+
+.polaroid {
+  padding-top: 10%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dish-info {
+  background: white;
+  border-width: 0;
+  box-sizing: border-box;
+  margin-top: -10px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.dish-name {
+  /*margin-top: 0;*/
+  /*margin-bottom: 0;*/
+  display: block;
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+.dish-picture {
+  width: 100%;
+  border-top: solid 70px white;
+  border-left: solid 35px white;
+  border-right: solid 35px white;
+  border-bottom: solid 40px white;
+  box-sizing: border-box;
+}
+
+.dish-description {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section-footer {
+  /*bottom: 2em;*/
+  padding-top: 15%;
+  /*position: relative;*/
+  margin-left: auto;
+  margin-top: auto;
+}
