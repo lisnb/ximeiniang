@@ -6,7 +6,8 @@
       "slide": {
         "dish_name": "黑椒猪柳",
         "dish_description": "肉老了，像在吃纸",
-        "dish_picture": "./images/dishes/heijiaozhuliu.jpeg"
+        "dish_picture": "./images/dishes/heijiaozhuliu.jpeg",
+        "dish_cook": "阿荡"
       }
     },
     {
@@ -14,7 +15,8 @@
       "slide": {
         "dish_name": "香辣肉丝",
         "dish_description": "香菜炒过之后就不见了",
-        "dish_picture": "./images/dishes/xianglarousi.jpeg"
+        "dish_picture": "./images/dishes/xianglarousi.jpeg",
+        "dish_cook": "阿荡"
       }
     },
     {
@@ -23,7 +25,8 @@
       "slide": {
         "dish_name": "宫保鸡丁",
         "dish_description": "为什么这样充满着爱呢😌",
-        "dish_picture": "./images/dishes/gongbaojiding.jpeg"
+        "dish_picture": "./images/dishes/gongbaojiding.jpeg",
+        "dish_cook": "阿荡"
       }
     },
     {
@@ -32,7 +35,8 @@
       "slide": {
         "dish_name": "豆豉鲮鱼油麦菜",
         "dish_description": "为什么也是这样充满着爱呢",
-        "dish_picture": "./images/dishes/douchilingyuyoumaicai.jpeg"
+        "dish_picture": "./images/dishes/douchilingyuyoumaicai.jpeg",
+        "dish_cook": "阿荡"
       }
     },
     {
@@ -41,12 +45,14 @@
         {
           "dish_name": "麻辣香锅",
           "dish_description": "为什么...",
-          "dish_picture": "./images/dishes/malaxiangguo/malaxiangguo1.jpeg"
+          "dish_picture": "./images/dishes/malaxiangguo/malaxiangguo1.jpeg",
+          "dish_cook": "阿荡"
         },
         {
           "dish_name": "现成的调味料包",
           "dish_description": "是很方便的",
-          "dish_picture": "./images/dishes/malaxiangguo/malaxiangguo2.jpeg"
+          "dish_picture": "./images/dishes/malaxiangguo/malaxiangguo2.jpeg",
+          "dish_cook": "阿荡"
         }
       ]
     }
