@@ -3,7 +3,7 @@
 * @Date:   2016-09-10T17:58:16+08:00
 * @Email:  lisnb.h@hotmail.com
 * @Last modified by:   lisnb
-* @Last modified time: 2016-09-10T18:50:40+08:00
+* @Last modified time: 2016-09-10T23:04:35+08:00
 */
 (function($) {
 $(document).ready(function() {
@@ -13,8 +13,8 @@ $(document).ready(function() {
   var tmpl_section = $.templates('#tmpl-section')
   function getDBData(callback) {
     $.get(dbpath, function(data){
-      console.log(data);
-      console.log(typeof(data))
+      // console.log(data);
+      // console.log(typeof(data))
       // var dishes = JSON.parse(data);
       callback(data['dishes'])
     })
@@ -23,7 +23,7 @@ $(document).ready(function() {
     var dishesArray = []
     var currentDishHTML = ''
     $.each(dishes, function(index, dish) {
-      console.log(dish)
+      // console.log(dish)
       if (dish['multislide']) {
         currentDishHTML = tmpl_single_slide.render(dish['slides'])
       } else {
@@ -33,11 +33,18 @@ $(document).ready(function() {
         'slides': currentDishHTML
       })
     })
-    console.log(dishesArray)
+    // console.log(dishesArray)
     var fullpageHTML = tmpl_section.render(dishesArray)
-    console.log(fullpageHTML)
+    // console.log(fullpageHTML)
     $('#fullpage').html(fullpageHTML)
-    $('#fullpage').fullpage()
+    $('#fullpage').fullpage({
+        afterRender: function(){
+            $.adaptiveBackground.run({
+              parent: '.section',
+              defaultColor: '#000'
+            })
+        }
+    })
   }
   function init() {
     getDBData(initFullpage);
