@@ -3,17 +3,22 @@
 @Date:   2016-09-06T21:57:18+08:00
 @Email:  lisnb.h@hotmail.com
 @Last modified by:   lisnb
-@Last modified time: 2016-09-06T23:48:53+08:00
+@Last modified time: 2016-09-10T19:15:33+08:00
 -->
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>喜媚娘の厨房</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/jquery.fullpage.min.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/ximeiniang.css" media="screen">
   </head>
   <body>
-    <div class="section">
+    <div id="fullpage">
+
+    </div>
+    <!-- <div class="section">
       <div class="polaroid">
         <img class="dish-picture" src="./images/dishes/gongbaojiding.jpeg" alt="宫保鸡丁" />
         <div class="dish-info">
@@ -28,6 +33,47 @@
           <img src="./images/ximeiniang.png" alt="" />
         </div>
       </div>
-    </div>
+    </div> -->
+    <script type="text/javascript" src="javascripts/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.fullpage.min.js"></script>
+    <script type="text/javascript" src="javascripts/jsrender.min.js"></script>
+    <script type="text/javascript" src="javascripts/ximeiniang.js"></script>
+    <script type="text/x-jsrender" id="tmpl-single-slide">
+      <div class="slide">
+        <div class="polaroid">
+          <img class="dish-picture" data-src="{{:dish_picture}}" alt="{{:dish_name}}"/>
+          <div class="dish-info">
+            <span class="dish-name">{{:dish_name}}</span>
+            <p class="dish-description">{{:dish_description}}</p>
+          </div>
+        </div>
+        <div class="section-footer">
+          <div class="ximeiniang-logo">
+            <img data-src="./images/ximeiniang.png" alt="喜媚娘の厨房，你的私人贴身厨房" />
+          </div>
+        </div>
+      </div>
+    </script>
+
+    <script type="text/x-jsrender" id="tmpl-single-dish">
+      <div class="polaroid">
+        <img class="dish-picture" data-src="{{:dish_picture}}" alt="{{:dish_name}}"/>
+        <div class="dish-info">
+          <span class="dish-name">{{:dish_name}}</span>
+          <p class="dish-description">{{:dish_description}}</p>
+        </div>
+      </div>
+      <div class="section-footer">
+        <div class="ximeiniang-logo">
+          <img data-src="./images/ximeiniang.png" alt="喜媚娘の厨房，你的私人贴身厨房" />
+        </div>
+      </div>
+    </script>
+
+    <script type="text/x-jsrender" id="tmpl-section">
+      <div class="section fp-auto-height-responsive">
+        {{:slides}}
+      </div>
+    </script>
   </body>
 </html>
