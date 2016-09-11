@@ -57,3 +57,7 @@ json文件存放在```/db```中，当前是```dishes.json```。
 - fullpage: https://github.com/alvarotrigo/fullPage.js
 - adpative-background: https://github.com/briangonzalez/jquery.adaptive-backgrounds.js
 - jsrender: https://github.com/BorisMoore/jsrender/
+
+
+# warning
+**CNAME** 文件用于做DNS解析，请务必不要修改和删除
