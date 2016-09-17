@@ -2,6 +2,65 @@
   "tag": "a-dang",
   "dishes": [
     {
+      "multislide": true,
+      "slides": [
+        {
+          "dish_name": "首次公测",
+          "dish_description": "送你花花",
+          "dish_picture": "./images/dishes/obt1/0.jpg",
+          "dish_cook": "阿荡"
+        },
+        {
+          "dish_name": "首次公测",
+          "dish_description": "送你山药花花",
+          "dish_picture": "./images/dishes/obt1/1.jpg",
+          "dish_cook": "阿荡"
+        },
+        {
+          "dish_name": "首次公测",
+          "dish_description": "把果酱浇成了王八形",
+          "dish_picture": "./images/dishes/obt1/2.jpg",
+          "dish_cook": "阿浪"
+        },
+        {
+          "dish_name": "首次公测",
+          "dish_description": "凉鸡丝",
+          "dish_picture": "./images/dishes/obt1/3.jpg",
+          "dish_cook": "阿浪"
+        },
+        {
+          "dish_name": "首次公测",
+          "dish_description": "凉拌鸡丝",
+          "dish_picture": "./images/dishes/obt1/4.jpg",
+          "dish_cook": "阿荡"
+        },
+        {
+          "dish_name": "首次公测",
+          "dish_description": "酸汤肥牛",
+          "dish_picture": "./images/dishes/obt1/5.jpg",
+          "dish_cook": "阿荡"
+        },
+        {
+          "dish_name": "首次公测",
+          "dish_description": "盐煎鸡翅",
+          "dish_picture": "./images/dishes/obt1/6.jpg",
+          "dish_cook": "阿荡"
+        },
+        {
+          "dish_name": "首次公测",
+          "dish_description": "干锅菜花",
+          "dish_picture": "./images/dishes/obt1/7.jpg",
+          "dish_cook": "阿荡"
+        },
+        {
+          "dish_name": "首次公测",
+          "dish_description": "吃光光，送你花花",
+          "dish_picture": "./images/dishes/obt1/8.jpg",
+          "dish_cook": "阿荡"
+        }
+      ]
+    },
+    {
       "multislide": false,
       "slide": {
         "dish_name": "黑椒猪柳",
