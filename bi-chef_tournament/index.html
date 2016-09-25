@@ -1,0 +1,721 @@
+<!--
+@Author: lisnb
+@Date:   2016-09-25T18:36:19+08:00
+@Email:  lisnb.h@hotmail.com
+@Last modified by:   lisnb
+@Last modified time: 2016-09-25T22:25:54+08:00
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+  </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        <p>Left panel content goes here</p>
+      </div>
+    </div>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-cover">
+      <div class="content-block">
+        <p>Right panel content goes here</p>
+      </div>
+    </div>
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <!-- Navbar inner for Index page-->
+          <div data-page="index" class="navbar-inner">
+            <!-- We have home navbar without left link-->
+            <div class="center sliding">Epic Bi-Chef Tournament</div>
+            <div class="right">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+          <!-- Navbar inner for About page-->
+          <div data-page="judge-ran" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding">冉桑</div>
+          </div>
+          <!-- Navbar inner for Services page-->
+          <div data-page="player-liu" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding">扭扭</div>
+          </div>
+          <!-- Navbar inner for Form page-->
+          <div data-page="player-xi" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding">喜媚娘</div>
+          </div>
+          <div data-page="month1-week1" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding">第一比赛月, 第一周: 野子</div>
+          </div>
+          <div data-page="month1-week1-liu" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding">星光</div>
+          </div>
+          <div data-page="month1-week1-xi" class="navbar-inner cached">
+            <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+            <div class="center sliding">他弃权了</div>
+          </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Index Page-->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+              <div class="content-block-title">欢迎来到 Epic Bi-Chef Tournament</div>
+              <div class="content-block">
+                <div class="content-block-inner">
+                  <p>Epic Bi-Chef Tournament, aka “城乡厨神争霸赛”, 是一项顶级烹饪赛事</p>
+                  <p>通过海选, 两名选手脱颖而出, 在之后的比赛中展现他们对烹饪的爱</p>
+                  <p>比赛为月赛制, 每个月赛由四个周赛组成, 周赛的得分累计, 最后得出月冠军</p>
+                </div>
+              </div>
+              <div class="content-block-title">进行中: 第一比赛月</div>
+              <div class="content-block-title">评委</div>
+              <div class="list-block media-list">
+                <ul>
+                  <li>
+                    <a href="#judge-ran" class="item-link item-content">
+                      <div class="item-media"><img src="img/avatar/judge-ran.png" width="44"></div>
+                      <div class="item-inner">
+                        <div class="item-title-row">
+                          <div class="item-title">冉桑</div>
+                        </div>
+                        <div class="item-text">from 村里</div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-block-title">参赛选手</div>
+              <div class="list-block media-list">
+                <ul>
+                  <li>
+                    <a href="#player-liu" class="item-link item-content">
+                      <div class="item-media"><img src="img/avatar/player-liu.png" width="44"></div>
+                      <div class="item-inner">
+                        <div class="item-title-row">
+                          <div class="item-title">扭扭</div>
+                        </div>
+
+                        <div class="item-text">from 某厨房</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#player-xi" class="item-link item-content">
+                      <div class="item-media"><img src="img/avatar/player-xi.png" width="44"></div>
+                      <div class="item-inner">
+                        <div class="item-title-row">
+                          <div class="item-title">喜媚娘</div>
+                        </div>
+                        <div class="item-text">from 喜媚娘の厨房™</div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="content-block-title">周赛</div>
+              <div class="list-block media-list">
+                <ul>
+                  <li>
+                    <a href="#month1-week1" class="item-link item-content">
+                      <!-- <div class="item-media"><img src="img/avatar/player-liu.png" width="44"></div> -->
+                      <div class="item-inner">
+                        <div class="item-title-row">
+                          <div class="item-title">第一周</div>
+                          <div class="item-after">
+                            野子
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="item-link item-content">
+                      <!-- <div class="item-media"><img src="img/avatar/player-liu.png" width="44"></div> -->
+                      <div class="item-inner">
+                        <div class="item-title-row">
+                          <div class="item-title">第二周</div>
+                          <div class="item-after">
+                            敬请期待
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- <div class="card">
+                <div class="card-header">参赛选手</div>
+                <div class="card-content">
+
+                </div>
+                <div class="card-footer">Card Footer</div>
+              </div> -->
+              <!-- <div class="list-block">
+                <ul>
+                  <li><a href="#about" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">About</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#services" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Services</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#form" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Form</div>
+                        </div>
+                      </div></a></li>
+                </ul>
+              </div>
+              <div class="content-block-title">Side panels</div>
+              <div class="content-block">
+                <div class="row">
+                  <div class="col-50"><a href="#" data-panel="left" class="button open-panel">Left Panel</a></div>
+                  <div class="col-50"><a href="#" data-panel="right" class="button open-panel">Right Panel</a></div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="page cached" data-page="judge-ran">
+            <div class="page-content">
+              <div class="content-block">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="card-content-inner">
+                      <img src="img/avatar/judge-ran.png" alt="" style="max-width:100%;">
+                    </div>
+                  </div>
+                </div>
+                <div class="content-block-title">冉桑</div>
+                <div class="card">
+                  <div class="card-header">姓名</div>
+                  <div class="card-content">
+                    <div class="card-content-inner">
+                      冉桑
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">爱好</div>
+                  <div class="card-content">
+                    <div class="card-content-inner">
+                      屁股...
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">她说</div>
+                  <div class="card-content">
+                    <div class="card-content-inner">
+                      我也不知道她要说森么...
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page cached" data-page="player-liu">
+            <div class="page-content">
+              <div class="content-block">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="card-content-inner">
+                      <img src="img/avatar/player-liu.png" alt="" style="max-width:100%;">
+                    </div>
+                  </div>
+                </div>
+                <div class="content-block-title">扭扭</div>
+                <div class="card">
+                  <div class="card-header">姓名</div>
+                  <div class="card-content">
+                    <div class="card-content-inner">
+                      扭扭
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">爱好</div>
+                  <div class="card-content">
+                    <div class="card-content-inner">
+                      屁股...
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">她说</div>
+                  <div class="card-content">
+                    <div class="card-content-inner">
+                      我也不知道她要说森么...
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page cached" data-page="player-xi">
+            <div class="page-content">
+              <div class="content-block">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="card-content-inner">
+                      <img src="img/avatar/player-xi.png" alt="" style="max-width:100%;">
+                    </div>
+                  </div>
+                </div>
+                <div class="content-block-title">喜媚娘</div>
+                <div class="card">
+                  <div class="card-header">姓名</div>
+                  <div class="card-content">
+                    <div class="card-content-inner">
+                      喜媚娘
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">爱好</div>
+                  <div class="card-content">
+                    <div class="card-content-inner">
+                      读书[微笑]
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">他说</div>
+                  <div class="card-content">
+                    <div class="card-content-inner">
+                      我爱我的民族，这是我自信心的源泉[微笑]
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="page cached" data-page="month1-week1">
+            <div class="page-content">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-content-inner">
+                    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="http://music.163.com/outchain/player?type=2&id=401723037&auto=0&height=66"></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-header">野子</div>
+                  <div class="card-content-inner">
+                    “宫崎骏说，被一个人深深地爱着，将给你力量，而深深地爱着一个人，将给你勇气。”
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="content-block-title">参赛作品</div> -->
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-header">参赛作品</div>
+                  <div class="card-content-inner">
+                    <div class="list-block media-list">
+                      <ul>
+                        <li>
+                          <a href="#month1-week1-liu" class="item-link item-content">
+                            <div class="item-media"><img src="img/avatar/player-liu.png" width="44"></div>
+                            <div class="item-inner">
+                              <div class="item-title-row">
+                                <div class="item-title">扭扭</div>
+                                <div class="item-after">星光</div>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#month1-week1-xi" class="item-link item-content">
+                            <div class="item-media"><img src="img/avatar/player-xi.png" width="44"></div>
+                            <div class="item-inner">
+                              <div class="item-title-row">
+                                <div class="item-title">喜媚娘</div>
+                                <div class="item-after">(他弃权了)</div>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="page cached" data-page="month1-week1-liu">
+            <div class="page-content">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-content-innner">
+                    <img src="img/month1/week1/liu/1.JPG" alt="" id="month1-week1-liu-gallary-trigger">
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">解析</div>
+                <div class="card-content">
+                  <div class="card-content-inner">
+                    <p>“吹啊吹啊我赤脚不害怕……你看我在勇敢的微笑”</p>
+                    <p>The wind is blowing and your heart is pounding hard, for it is never easy to fight against the darkness all alone. But when you look up, you see the stars shining in the sky, of which the light is so gentle that it has the power to heal everything.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">Recipe</div>
+                <div class="card-content">
+                  <div class="card-content-inner">
+                    原料：鸡蛋 秋葵 土豆 奇异果<br>
+鸡蛋打散，兑入少量纯牛奶，一勺绵白糖。秋葵白灼，去头去尾。平底锅内抹一层橄榄油，倒入蛋液，待快凝固时秋葵入锅，卷成鸡蛋卷即可。<br>
+鸡蛋和秋葵搭配，鸡蛋滑软，秋葵清脆，一口吃下去先甜软后甘脆，很有层次感。鸡蛋富含蛋白质和人体需要的微量元素。秋葵含有丰富的维生素C和可溶性纤维，其粘性物质不仅可促进消化还可有效降低血清胆固醇。<br>
+土豆泥兑入了牛奶口感更绵软，调料放了盐和胡椒。咸香味，与厚蛋烧的甜香口感相得益彰。土豆代替米面作为主食，富含食物纤维，也含有足够人体的碳水化合物，以及多种微量元素。比传统的主食热量更低。<br>
+猕猴桃切片做搭配，酸酸甜甜的很清口。富含多种维生素～<br>
+土豆泥+秋葵厚蛋烧+猕猴桃+蔓越莓汁 的搭配，营养全面又健康低卡～更重要的是，蛋白质和碳水的比例帮助人体在健身运动时更高效的燃脂增肌。<br>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">评委点评</div>
+                <div class="card-content">
+                  <div class="card-content-inner">
+                    <div class="content-block">
+                      <div class="content-block-inner">
+                        该参赛菜品实属惊艳，从选材到烹调，最大程度上保证了菜品的原汁原味和营养均衡，菜品的美感更是直逼米其林餐厅。由于评委不想第一场比赛就给其他选手以及自己太大压力，抑制了打满分的冲动，因此压低给分，特此说明。
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">得分</div>
+                <div class="card-content">
+                  <div class="card-content-inner">
+                    <div class="list-block">
+                      <ul>
+                        <li class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">菜品得分</div>
+                            <div class="item-after">4/5</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">菜名</div>
+                            <div class="item-after">1.5/2</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">菜品解析</div>
+                            <div class="item-after">2.5/3</div>
+                          </div>
+                        </li>
+                        <li class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">总分</div>
+                            <div class="item-after">8/10</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page cached" data-page="month1-week1-xi">
+            <div class="page-content">
+              <div class="content-block">
+                <div class="content-block-inner">
+                  生活太难，糯米太黏
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- About Page-->
+          <div data-page="about" class="page cached">
+            <div class="page-content">
+              <div class="content-block">
+                <p>You may go <a href="#" class="back">back</a> or load <a href="#services">Services</a> page.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel commodo massa, eu adipiscing mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus ultricies dictum neque, non varius tortor fermentum at. Curabitur auctor cursus imperdiet. Nam molestie nisi nec est lacinia volutpat in a purus. Maecenas consectetur condimentum viverra. Donec ultricies nec sem vel condimentum. Phasellus eu tincidunt enim, sit amet convallis orci. Vestibulum quis fringilla dolor.    </p>
+                <p>Mauris commodo lacus at nisl lacinia, nec facilisis erat rhoncus. Sed eget pharetra nunc. Aenean vitae vehicula massa, sed sagittis ante. Quisque luctus nec velit dictum convallis. Nulla facilisi. Ut sed erat nisi. Donec non dolor massa. Mauris malesuada dolor velit, in suscipit leo consectetur vitae. Duis tempus ligula non eros pretium condimentum. Cras sed dolor odio.</p>
+                <p>Suspendisse commodo adipiscing urna, a aliquet sem egestas in. Sed tincidunt dui a magna facilisis bibendum. Nunc euismod consectetur lorem vitae molestie. Proin mattis tellus libero, non hendrerit neque eleifend ac. Pellentesque interdum velit at lacus consectetur scelerisque et id dui. Praesent non fringilla dui, a elementum purus. Proin vitae lacus libero. Nunc eget lectus non mi iaculis interdum vel a velit. Nullam tincidunt purus id lacus ornare, at elementum turpis euismod. Cras mauris enim, congue eu nisl sit amet, pulvinar semper erat. Suspendisse sed mauris diam.</p>
+                <p>Nam eu mauris leo. Pellentesque aliquam vehicula est, sed lobortis tellus malesuada facilisis. Fusce at hendrerit ligula. Donec eu nibh convallis, pulvinar enim quis, lacinia diam. Ut semper ac magna nec ornare. Integer placerat justo sed nunc suscipit facilisis. Vestibulum ac tincidunt augue. Duis eu aliquet mauris, vel luctus mauris. Nulla non augue nec diam pharetra posuere at in mauris.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Services Page-->
+          <div data-page="services" class="page cached">
+            <div class="page-content">
+              <div class="content-block">
+                <p>You may go <a href="#" class="back">back</a> or load <a href="#about">About</a> page.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel commodo massa, eu adipiscing mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus ultricies dictum neque, non varius tortor fermentum at. Curabitur auctor cursus imperdiet. Nam molestie nisi nec est lacinia volutpat in a purus. Maecenas consectetur condimentum viverra. Donec ultricies nec sem vel condimentum. Phasellus eu tincidunt enim, sit amet convallis orci. Vestibulum quis fringilla dolor.    </p>
+                <p>Mauris commodo lacus at nisl lacinia, nec facilisis erat rhoncus. Sed eget pharetra nunc. Aenean vitae vehicula massa, sed sagittis ante. Quisque luctus nec velit dictum convallis. Nulla facilisi. Ut sed erat nisi. Donec non dolor massa. Mauris malesuada dolor velit, in suscipit leo consectetur vitae. Duis tempus ligula non eros pretium condimentum. Cras sed dolor odio.</p>
+                <p>Suspendisse commodo adipiscing urna, a aliquet sem egestas in. Sed tincidunt dui a magna facilisis bibendum. Nunc euismod consectetur lorem vitae molestie. Proin mattis tellus libero, non hendrerit neque eleifend ac. Pellentesque interdum velit at lacus consectetur scelerisque et id dui. Praesent non fringilla dui, a elementum purus. Proin vitae lacus libero. Nunc eget lectus non mi iaculis interdum vel a velit. Nullam tincidunt purus id lacus ornare, at elementum turpis euismod. Cras mauris enim, congue eu nisl sit amet, pulvinar semper erat. Suspendisse sed mauris diam.</p>
+                <p>Nam eu mauris leo. Pellentesque aliquam vehicula est, sed lobortis tellus malesuada facilisis. Fusce at hendrerit ligula. Donec eu nibh convallis, pulvinar enim quis, lacinia diam. Ut semper ac magna nec ornare. Integer placerat justo sed nunc suscipit facilisis. Vestibulum ac tincidunt augue. Duis eu aliquet mauris, vel luctus mauris. Nulla non augue nec diam pharetra posuere at in mauris.     </p>
+              </div>
+            </div>
+          </div>
+          <!-- Form Page-->
+          <div data-page="form" class="page cached">
+            <div class="page-content">
+              <div class="content-block-title">Form Example</div>
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-name"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title label">Name</div>
+                        <div class="item-input">
+                          <input type="text" placeholder="Your name">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-email"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title label">E-mail</div>
+                        <div class="item-input">
+                          <input type="email" placeholder="E-mail">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-url"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title label">URL</div>
+                        <div class="item-input">
+                          <input type="url" placeholder="URL">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-password"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title label">Password</div>
+                        <div class="item-input">
+                          <input type="password" placeholder="Password">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-tel"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title label">Phone</div>
+                        <div class="item-input">
+                          <input type="tel" placeholder="Phone">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-gender"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title label">Gender</div>
+                        <div class="item-input">
+                          <select>
+                            <option>Male</option>
+                            <option>Female</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-calendar"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title label">Birth date</div>
+                        <div class="item-input">
+                          <input type="date" placeholder="Birth day" value="2014-04-30">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-toggle"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title label">Switch</div>
+                        <div class="item-input">
+                          <label class="label-switch">
+                            <input type="checkbox">
+                            <div class="checkbox"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-settings"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title label">Slider</div>
+                        <div class="item-input">
+                          <div class="range-slider">
+                            <input type="range" min="0" max="100" value="50" step="0.1">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="align-top">
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-comment"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title label">Textarea</div>
+                        <div class="item-input">
+                          <textarea></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-block">
+                <div class="row">
+                  <div class="col-50"><a href="#" class="button button-big button-fill color-red">Cancel</a></div>
+                  <div class="col-50">
+                    <input type="submit" value="Submit" class="button button-big button-fill color-green">
+                  </div>
+                </div>
+              </div>
+              <div class="content-block-title">Checkbox group</div>
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <label class="label-checkbox item-content">
+                      <input type="checkbox" name="ks-checkbox" value="Books" checked>
+                      <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">Books</div>
+                      </div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="label-checkbox item-content">
+                      <input type="checkbox" name="ks-checkbox" value="Movies">
+                      <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">Movies</div>
+                      </div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="label-checkbox item-content">
+                      <input type="checkbox" name="ks-checkbox" value="Food">
+                      <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">Food</div>
+                      </div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="label-checkbox item-content">
+                      <input type="checkbox" name="ks-checkbox" value="Drinks">
+                      <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">Drinks</div>
+                      </div>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-block-title">Radio buttons group</div>
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <label class="label-radio item-content">
+                      <input type="radio" name="ks-radio" value="Books" checked>
+                      <div class="item-inner">
+                        <div class="item-title">Books</div>
+                      </div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="label-radio item-content">
+                      <input type="radio" name="ks-radio" value="Movies">
+                      <div class="item-inner">
+                        <div class="item-title">Movies</div>
+                      </div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="label-radio item-content">
+                      <input type="radio" name="ks-radio" value="Food">
+                      <div class="item-inner">
+                        <div class="item-title">Food</div>
+                      </div>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="label-radio item-content">
+                      <input type="radio" name="ks-radio" value="Drinks">
+                      <div class="item-inner">
+                        <div class="item-title">Drinks</div>
+                      </div>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Toolbar-->
+        <!-- <div class="toolbar">
+          <div class="toolbar-inner"><a href="#about" class="link">关于</a></div>
+        </div> -->
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>
